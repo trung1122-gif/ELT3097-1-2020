@@ -7,5 +7,5 @@ Nguyễn Đức Trung
 Viên Đức Vương
 
 <p align="center">
-  <img width="600" height="500" src="https://github.com/trung1122-gif/ELT3097-1-2020/blob/master/VienDucVuong/VienDucVuong.gif">
+  <img width="600" height="800" src="https://github.com/trung1122-gif/ELT3097-1-2020/blob/master/VienDucVuong/VienDucVuong.gif">
 </p>
