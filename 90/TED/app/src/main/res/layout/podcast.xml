@@ -11,13 +11,13 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="72dp"
+            android:layout_height="70dp"
             android:src="@drawable/zzzz" />
     </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="580dp">
+        android:layout_height="610dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,6 +29,7 @@
                 android:layout_height="wrap_content">
 
                 <ImageButton
+                    android:onClick="batdau"
                     android:id="@+id/imageButton1"
                     android:layout_width="190dp"
                     android:layout_height="190dp"
@@ -55,7 +56,7 @@
                     android:id="@+id/textView1"
                     android:layout_width="122dp"
                     android:layout_height="35dp"
-                    android:text="Worklife with Adam Granth"
+                    android:text="@string/worklife_with_adam_grant"
                     android:textColor="@android:color/background_dark"
                     android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp" />
@@ -64,7 +65,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="136dp"
                     android:layout_height="37dp"
-                    android:text="TED Radio Hour"
+                    android:text="@string/ted_radio_hour"
                     android:textColor="@android:color/background_dark"
                     android:layout_marginLeft="80dp"
                     android:layout_marginStart="80dp" />
@@ -81,7 +82,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="122dp"
                     android:layout_height="30dp"
-                    android:text="May 12, 2020"
+                    android:text="@string/may_12_2020"
                     android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp" />
 
@@ -89,7 +90,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="Friday"
+                    android:text="@string/friday"
                     android:layout_marginLeft="80dp"
                     android:layout_marginStart="80dp" />
 
@@ -127,7 +128,7 @@
                     android:id="@+id/textVie5"
                     android:layout_width="122dp"
                     android:layout_height="25dp"
-                    android:text="TED Talk Daily"
+                    android:text="@string/ted_talk_daily"
                     android:textColor="@android:color/background_dark"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp" />
@@ -136,7 +137,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="136dp"
                     android:layout_height="25dp"
-                    android:text="TED en Espanol"
+                    android:text="@string/ted_en_espanol"
                     android:textColor="@android:color/background_dark"
                     android:layout_marginLeft="80dp"
                     android:layout_marginStart="80dp" />
@@ -153,7 +154,7 @@
                     android:id="@+id/textView7"
                     android:layout_width="122dp"
                     android:layout_height="30dp"
-                    android:text="21:46"
+                    android:text="@string/_21_46"
                     android:layout_marginLeft="10dp"
                     android:layout_marginStart="10dp" />
 
@@ -161,7 +162,7 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:text="Thursday"
+                    android:text="@string/thursday"
                     android:layout_marginLeft="80dp"
                     android:layout_marginStart="80dp" />
 
@@ -188,36 +189,85 @@
                     android:layout_marginStart="10dp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="122dp"
+                    android:layout_height="25dp"
+                    android:text="@string/the_ted_interview"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="136dp"
+                    android:layout_height="25dp"
+                    android:text="@string/sincerely_x_season_1"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="122dp"
+                    android:layout_height="30dp"
+                    android:text="@string/july_23_2020"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/apr_6_2020"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginStart="80dp" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageButton
 
             android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:src="@drawable/under_1" />
+            android:layout_height="60dp"
+            android:src="@drawable/talk_under" />
 
         <ImageButton
 
             android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:src="@drawable/under_2" />
+            android:layout_height="60dp"
+            android:src="@drawable/discover_under" />
 
         <ImageButton
             android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:src="@drawable/under_4" />
+            android:layout_height="60dp"
+            android:src="@drawable/podcast_under" />
 
         <ImageButton
             android:layout_width="100dp"
-            android:layout_height="80dp"
-            android:src="@drawable/under_3" />
+            android:layout_height="60dp"
+            android:src="@drawable/myted_under" />
     </LinearLayout>
 
 </LinearLayout>

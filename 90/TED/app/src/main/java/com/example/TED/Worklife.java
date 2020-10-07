@@ -1,4 +1,4 @@
-package com.example.TED;
+package com.example.ted;
 
 import android.os.Bundle;
 
@@ -15,4 +15,4 @@ public class Worklife extends AppCompatActivity {
 
     }
 
-    }
+}
