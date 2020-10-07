@@ -1,4 +1,11 @@
 Nguyễn Đức Trung
-https://github.com/trung1122-gif/ELT3097-1-2020/blob/master/NguyenDucTrung/Trung.gif
+
+<p align="center">
+  <img width="460" height="300" src="http://https://github.com/trung1122-gif/ELT3097-1-2020/blob/master/NguyenDucTrung/Trung.gif">
+</p>
+
 Viên Đức Vương
-https://github.com/trung1122-gif/ELT3097-1-2020/blob/master/VienDucVuong/VienDucVuong.gif
+
+<p align="center">
+  <img width="460" height="300" src="https://github.com/trung1122-gif/ELT3097-1-2020/blob/master/VienDucVuong/VienDucVuong.gif">
+</p>
