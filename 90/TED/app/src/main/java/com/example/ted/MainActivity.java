@@ -1,54 +1,94 @@
-package com.example.ted;
+package com.example.TED;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.GridView;
+import android.widget.ImageButton;
+import android.widget.PopupMenu;
+import android.widget.Toast;
+import android.widget.VideoView;
 
-import com.example.ted.adapter.postersAdapter;
-import com.example.ted.object.posters;
+public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
+    ImageButton btnFirst;
+    ImageButton btnSecond;
+    ImageButton btnAdamGrant;
+    VideoView videov;
+    ImageButton clk;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
-GridView listPosters;
-postersAdapter adapter;
-ArrayList<posters> postersArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        init();
-        anhXa();
-        Setup();
-        SetClick();
+//        clk = (ImageButton) findViewById(R.id.playButton)
+//                videov= (VideoView) findViewById(R.id.videoView)
+
+
+
+
+
+        btnFirst = (ImageButton) findViewById(R.id.imageButton_edu);
+        btnFirst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Education.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btnSecond = (ImageButton) findViewById(R.id.imageButton_des);
+        btnSecond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Design.class);
+                startActivity(intent);
+            }
+        });
+        btnAdamGrant = (ImageButton) findViewById(R.id.imageButton_adamGrant);
+        btnAdamGrant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AdamGrantSpeaker.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+// code for option menu (3 dot)
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_menu);
+        popup.show();
     }
 
-    private void init(){
-        postersArrayList = new ArrayList<>();
-        postersArrayList.add(new posters("WorkLife with Adam","May 12, 2020","https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/007/479/original/Worklife_Podcast.png?1552318499?w=320"));
-        postersArrayList.add(new posters("TED Radio Hour","Friday","https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/008/342/original/TRH_Podcast_Tile.png?w=320"));
-        postersArrayList.add(new posters("The Talks Daily","21:50","https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/007/473/original/TED_Talks_Daily_Podcasts.png?1552317800?w=320"));
-        postersArrayList.add(new posters("TED en Espanol","Thursday","https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/007/470/original/TED_en_Espanol_Podcast.png?1552317694?w=320"));
-        postersArrayList.add(new posters("The TED Interview","Oct 9,2020","https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/007/472/original/The_TED_Interview_Podcasts.png?1552317773?w=320"));
-        postersArrayList.add(new posters("Sincerely, X: Season","Apr 6, 2020","https://pi.tedcdn.com/r/pb-assets.tedcdn.com/system/baubles/files/000/007/477/original/SincerelyX_Podcast.png?1552318090?w=320"));
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.watch:
+                Toast.makeText(this, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.listen:
+                Toast.makeText(this, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.addToMyList:
+                Toast.makeText(this, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return false;
 
-        adapter= new postersAdapter(this, 0, postersArrayList);
+        }
+    }
+    //
+//
+//    public void batdau(View view) {
+//        Intent i = new Intent(this,Podcasts.class);
+//        startActivity(i);
+//    }
 
-    }
-
-    private void anhXa(){
-        listPosters = findViewById(R.id.listPosters);
-    }
-    private void Setup(){
-        listPosters.setAdapter(adapter);
-    }
-    private void SetClick(){
-
-    }
 
 }
