@@ -1,0 +1,16 @@
+[PROJECT]
+Target=test lcd.hex
+Processor_Text=PIC16F877A
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=test lcd.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[test lcd.c]
+Type=4
+[mru-list]
+1=test lcd.c
+[Units]
+Count=1
+1=test lcd (main)

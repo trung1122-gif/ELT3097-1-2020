@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mitalks"
+        android:title="Talks"
+        android:icon="@drawable/talk_under"/>
+    <item android:id="@+id/miDiscover"
+        android:title="Discover"
+        android:icon="@drawable/discover_under"/>
+    <item android:id="@+id/miPodcasts"
+        android:title="Podcasts"
+        android:icon="@drawable/podcast_under" />
+
+
+
+    <item android:id="@+id/milogin"
+        android:title="My Ted"
+        android:icon="@drawable/myted_under"/>
+</menu>

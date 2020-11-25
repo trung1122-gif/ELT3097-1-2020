@@ -1,0 +1,6 @@
+#include <16F877A.h>
+#device *=16 ADC=10
+
+#FUSES NOWDT, HS, NOPUT, NOPROTECT, NODEBUG, NOBROWNOUT,NOLVP, NOCPD, NOWRT
+#use delay(crystal=20000000)
+

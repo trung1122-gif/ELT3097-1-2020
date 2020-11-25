@@ -1,0 +1,26 @@
+#include <16F877A.h>
+//#include <def_877a.h>
+#device *=16 adc=10
+#fuses XT, NOWDT, NOPROTECT, BROWNOUT, PUT, NOLVP 
+#use delay(crystal=20000000)
+
+void main(){
+
+  setup_timer_2(T2_DIV_BY_16,255,1);  //Tao xung tan so 1.22khz
+  setup_ccp2(CCP_PWM);                //chon kenh pwm
+
+   while(true){
+     set_pwm2_duty(0);               // set duty 0%
+  delay_ms(3000);
+    set_pwm2_duty(64);               // set duty 25%
+  delay_ms(3000);
+    set_pwm2_duty(128);              // set duty 50%
+  delay_ms(3000);
+    set_pwm2_duty(192);              // set duty 75%
+  delay_ms(3000);
+    set_pwm2_duty(255);              // set duty 100%
+  delay_ms(3000);          
+   
+    }  
+}
+
