@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="My TED"
+            android:textColor="#E62B25"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:background="#F0F0F0"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/anh_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:text="Log in to your TED account"
+            android:textColor="#202020"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:text="Sync My List,Likes, and History."
+            android:textColor="#6F6F6F"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="85dp"
+            android:backgroundTint="#E62B25"
+            android:gravity="center"
+            android:text="LOG IN"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <Button
+
+        android:id="@+id/button_mylist"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/anh_2"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:stateListAnimator="@null"
+        android:text="My List\nNo talks"
+        android:textAllCaps="false"
+        android:textColor="#E62B25"/>
+
+    <Button
+        android:id="@+id/button_likes"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/anh_3"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"
+        android:stateListAnimator="@null"
+        android:text="Likes\nNo talks"
+        android:textAllCaps="false"
+        android:textColor="#E62B25" />
+
+    <Button
+        android:id="@+id/button_downloads"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:stateListAnimator="@null"
+        android:text="Downloads\nNo talks"
+        android:drawableLeft="@drawable/anh_4"
+        android:textAllCaps="false"
+        android:textColor="#E62B25"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"/>
+
+    <Button
+        android:id="@+id/button_history"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:backgroundTint="#FFFFFF"
+        android:stateListAnimator="@null"
+        android:text="History\n1 takls"
+        android:drawableLeft="@drawable/anh_5"
+        android:textAllCaps="false"
+        android:textColor="#E62B25"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="30dp"/>
+
+</LinearLayout>
