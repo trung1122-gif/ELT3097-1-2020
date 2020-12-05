@@ -30,13 +30,13 @@ public class Design extends AppCompatActivity implements PopupMenu.OnMenuItemCli
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.watch:
-                Toast.makeText(this, "Item 1 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "watch clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.listen:
-                Toast.makeText(this, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "listen clicked", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.addToMyList:
-                Toast.makeText(this, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "addToMyList clicked", Toast.LENGTH_SHORT).show();
                 return true;
             default:
                 return false;

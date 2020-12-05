@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="25dp">
 
         <ImageButton
@@ -46,15 +46,16 @@
 
         <ImageButton
             android:layout_width="8dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/option_menu"
-            android:onClick="showPopup"/>
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="25dp">
 
         <ImageButton
@@ -80,14 +81,16 @@
         </LinearLayout>
         <ImageButton
             android:layout_width="8dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/option_menu"/>
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="25dp">
 
         <ImageButton
@@ -116,14 +119,16 @@
 
         <ImageButton
             android:layout_width="8dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/option_menu"/>
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="25dp">
 
         <ImageButton
@@ -152,14 +157,16 @@
 
         <ImageButton
             android:layout_width="8dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/option_menu"/>
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="25dp">
 
         <ImageButton
@@ -188,14 +195,16 @@
 
         <ImageButton
             android:layout_width="8dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/option_menu"/>
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="13dp"
         android:layout_marginTop="25dp">
 
         <ImageButton
@@ -224,8 +233,10 @@
 
         <ImageButton
             android:layout_width="8dp"
-            android:layout_height="48dp"
-            app:srcCompat="@drawable/option_menu"/>
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
     </LinearLayout>
 </LinearLayout>
 

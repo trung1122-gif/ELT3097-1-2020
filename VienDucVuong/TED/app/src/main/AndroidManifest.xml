@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Podcasts"/>
         <activity android:name=".Design"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Education" />
         <activity android:name=".AdamGrantSpeaker"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MyTed"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <activity android:name=".VideoMedicine"/>
+        <activity android:name=".Medicine"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
         <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                  android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
