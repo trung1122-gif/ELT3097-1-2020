@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TED</string>
+    <string name="action_Vietnamese_subtitles">Vietnamese subtitles</string>
+    <string name="action_newest">Newest</string>
+    <string name="action_most">Most</string>
+    <string name="action_trending">Trending</string>
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/itemdesign2"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:text="Jon Gray"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="Sức mạnh của chiếc lược Afro"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="8dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/itemdesign1"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:text="Yves Béhar"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="Cách những chiếc ván lướt kết nối chúng ta với thiên nhiên"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="left" />
+        </LinearLayout>
+        <ImageButton
+            android:layout_width="8dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/itemdesign3"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:text="Jennifer 8. Lee"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="Lý do 1,5 tỷ người dùng đũa để ăn"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="8dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/itemdesign4"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:text="Debbie Millman"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="Thời trang và công dụng của kính mắt"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="8dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/itemdesign5"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:text="Paola Antonelli"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="Tại sao mì lại có đủ hình dạng và kích cỡ?"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="8dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/itemdesign6"/>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:text="Becca McCharen-Tran"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:text="Thời trang tôn vinh mọi dáng người - mãnh liệt và không hối tiếc"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="8dp"
+            android:layout_height="35dp"
+            app:srcCompat="@drawable/ic_option_menu"
+            android:onClick="showPopup"
+            tools:ignore="VectorDrawableCompat"/>
+    </LinearLayout>
+</LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
