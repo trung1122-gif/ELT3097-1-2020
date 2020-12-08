@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TED</string>
+    <string name="action_Vietnamese_subtitles">Vietnamese subtitles</string>
+    <string name="action_newest">Newest</string>
+    <string name="action_most">Most</string>
+    <string name="action_trending">Trending</string>
+    <string name="podcasts" >Podcasts</string>
+    <string name="worklife_with_adam_grant"> Worklife with Adam Grant</string>
+    <string name="may_12_2020"> May 12 2020 </string>
 </resources>

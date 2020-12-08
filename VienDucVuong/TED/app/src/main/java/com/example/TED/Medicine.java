@@ -1,4 +1,4 @@
-package com.example.TED;
+package com.example.ted;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.example.TED;
+package com.example.ted;
 
 import android.net.Uri;
 import android.os.Bundle;

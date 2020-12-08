@@ -1,21 +1,29 @@
-package com.example.TED;
+package com.example.ted;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
 public class Design extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
-
+    ImageButton imageBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_design);
-        getSupportActionBar().setTitle("Design");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        imageBack = (ImageButton) findViewById(R.id.back);
+                imageBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Design.this, MainActivity.class);
+                        startActivity(intent);
+                    }
+                });
     }
 
 

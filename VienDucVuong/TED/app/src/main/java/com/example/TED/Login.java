@@ -1,4 +1,4 @@
-package com.example.TED;
+package com.example.ted;
 
 import android.os.Bundle;
 
@@ -10,7 +10,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        getSupportActionBar().setTitle("Log in");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 }
