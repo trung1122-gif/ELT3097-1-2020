@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/vietnameseSubtitles"
+        android:title="@string/action_Vietnamese_subtitles" />
+
+    <item android:id="@+id/newest"
+        android:title="@string/action_newest"
+        />
+
+    <item android:id="@+id/trending"
+        android:title="@string/action_trending" />
+
+    <item android:id="@+id/most"
+        android:title="@string/action_most" />
+</menu>
