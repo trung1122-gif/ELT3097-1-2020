@@ -13,10 +13,11 @@ public class VideoMedicine extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_medicine);
         VideoView videoview = findViewById(R.id.video_view);
-        String url = "https://www.youtube.com/watch?v=utTw_g4jkDw&list=RDMMpLDC27L-OeI&index=6&ab_channel=POPSMUSIC";
-
-        videoview.setVideoURI(Uri.parse(url));
-        videoview.start();
-
+        String videopath = "android.resource://" + getPackageName() + "/" + R.raw.videoplayback;
+        Uri uri = Uri.parse(videopath);
+        videoview.setVideoURI(uri);
+        MediaController mediaController = new MediaController(this);
+        videoview.setMediaController(mediaController);
+        mediaController.setAnchorView(videoview);
     }
 }

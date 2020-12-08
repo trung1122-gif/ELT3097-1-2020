@@ -1,8 +1,5 @@
 package com.example.ted;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -11,13 +8,16 @@ import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     ImageButton btnSecond;
     ImageButton btnAdamGrant;
     ImageButton btnMedicine;
-
+    ImageButton btnTips;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.miPodcasts:
-                        startActivity(new Intent(getApplicationContext(), Design.class));
+                        startActivity(new Intent(getApplicationContext(), Podcasts.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.miTalks:
@@ -43,6 +43,15 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                         return true;
                 }
                 return false;
+            }
+        });
+
+        btnTips = (ImageButton) findViewById(R.id.btnThird);
+        btnTips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Tips.class);
+                startActivity(intent);
             }
         });
 
@@ -99,3 +108,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
 
 }
+
+
+
+
